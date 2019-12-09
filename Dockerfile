@@ -25,6 +25,7 @@ RUN export DEBIAN_FRONTEND=noninteractive && apt install -y iptables
 RUN apt install -y git
 RUN apt install -y net-tools
 RUN apt install -y expect
+RUN git clone https://github.com/scipag/vulscan /usr/share/nmap/scripts/vulscan
 
 # ?
 # RUN apt install -y wireshark
