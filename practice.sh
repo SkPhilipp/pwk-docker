@@ -10,14 +10,14 @@ fi
 
 if [ "$1" == "start" ]
 then
-    docker build . -t practice
     containerId=$(docker ps | grep practice | cut -d " " -f 1 | head -n 1)
     if [ -z "$containerId" ]
     then
-        echo "starting container"
-        echo "./checkout.sh"
-        echo "cd pwk"
-        echo "./network.sh &"
+        docker build . -t practice
+        echo "# run:"
+        echo "# ./checkout.sh"
+        echo "# cd pwk"
+        echo "# ./network.sh &"
         docker run -it --cap-add=NET_ADMIN --privileged --device=/dev/net/tun --hostname practice practice
     else
         echo "exec into $containerId"
