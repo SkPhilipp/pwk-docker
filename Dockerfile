@@ -26,7 +26,7 @@ RUN apt install -y git
 RUN apt install -y net-tools
 RUN apt install -y expect
 RUN git clone https://github.com/scipag/vulscan /usr/share/nmap/scripts/vulscan
-
+RUN git clone https://github.com/vulnersCom/nmap-vulners /usr/share/nmap/scripts/vulners
 # ?
 # RUN apt install -y wireshark
 # this depends on systemctl and lsof
