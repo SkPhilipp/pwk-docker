@@ -28,6 +28,7 @@ RUN apt install -y expect
 RUN git clone --depth=1 https://github.com/scipag/vulscan /usr/share/nmap/scripts/vulscan && rm -rf /usr/share/nmap/scripts/vulscan/.git
 RUN git clone --depth=1 https://github.com/vulnersCom/nmap-vulners /usr/share/nmap/scripts/vulners && rm -rf /usr/share/nmap/scripts/vulners/.git
 RUN apt install -y metasploit-framework
+RUN apt install -y exploitdb
 
 # ?
 # RUN apt install -y wireshark
