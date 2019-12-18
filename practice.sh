@@ -8,7 +8,7 @@ then
     echo "# ./checkout.sh"
     echo "# cd pwk"
     echo "# ./network.sh &"
-    docker run -it --cap-add=NET_ADMIN --privileged --device=/dev/net/tun --hostname practice practice
+    docker run -it --cap-add=NET_ADMIN --env TERM=cygwin --privileged --device=/dev/net/tun --hostname practice practice
 else
     echo "exec into $containerId"
     docker exec -it $containerId bash
