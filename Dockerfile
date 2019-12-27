@@ -29,6 +29,9 @@ RUN git clone --depth=1 https://github.com/scipag/vulscan /usr/share/nmap/script
 RUN git clone --depth=1 https://github.com/vulnersCom/nmap-vulners /usr/share/nmap/scripts/vulners && rm -rf /usr/share/nmap/scripts/vulners/.git
 RUN apt install -y metasploit-framework
 RUN apt install -y exploitdb
+RUN apt install -y hydra hydra-gtk
+RUN apt install -y ncrack
+RUN apt install -y seclists
 
 # ?
 # RUN apt install -y wireshark
