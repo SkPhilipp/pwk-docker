@@ -40,7 +40,5 @@ RUN apt install -y seclists
 # RUN openvasmd --user=admin --new-password=CEU50LCmVpyPFnEQMqZFYfh2XYN75YnN1FDjvIgG
 
 WORKDIR /root/
-ADD checkout.sh /root/checkout.sh
-RUN chmod +x /root/checkout.sh
 RUN updatedb
 
